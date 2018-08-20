@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="triangles" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 512" enable-background="new 0 0 1024 512" xml:space="preserve">
+	 <defs>
+                    <filter id="glow">
+                        <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+                        <femerge>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="SourceGraphic"></femergenode>
+                        </femerge>
+                    </filter>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(0, 195, 255);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(78, 0, 204);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+<g id="_x32_">
+	<polygon id="to_fade" fill="#FFFFFF" points="220.3,417.8 164.1,417.8 192.2,371.2 188.2,364.5 156,417.8 220.3,417.8 	">
+	<animate attributeName="opacity" from="1" to="0" dur="2s" begin=".1s" fill="freeze" repeatCount="1"/>
+	</polygon>
+	<g id="_x32__1_">
+		<polygon fill="#FFFFFF" points="355.6,87.2 192.2,357.8 188.2,364.5 192.2,371.2 196.3,364.5 355.6,100.7 546.7,417.8
+			228.3,417.8 220.3,417.8 220.3,417.8 156,417.8 151.7,424.9 232.6,424.9 559,424.9 		"/>
+		<path fill="#FFFFFF" d="M355.6,170.1L226.8,383.4h257.3L355.6,170.1z M355.6,183.6l116.1,192.8H239.2L355.6,183.6z"/>
+	</g>
+	<animateTransform attributeName="transform"
+    type="translate"
+    from="0 0"
+    to="327 0"
+    begin="0s"
+    dur="2s"
+	fill="freeze"
+    repeatCount="1"
+  />
+</g>
+<g id="_x31_">
+	<polygon id="to_fade_1_" fill="#FFFFFF" points="554.7,417.8 522.6,364.5 518.6,371.2 546.7,417.8 	">
+	<animate attributeName="opacity" from="1" to="0" dur="2s" begin=".1s" fill="freeze" repeatCount="1"/>
+	</polygon>
+	<g id="_x31__1_">
+		<polygon fill="#FFFFFF" points="559,424.8 554.7,417.8 546.7,417.8 546.7,417.8 482.3,417.8 164.1,417.8 355.6,100.7 514.5,364.4
+			518.6,371.2 522.6,364.5 518.6,357.8 355.6,87.2 151.7,424.9 559,424.9 		"/>
+		<path fill="#FFFFFF" d="M226.8,383.4h257.3L355.6,170.1L226.8,383.4z M239.2,376.4l116.4-192.8l116.1,192.8H239.2z"/>
+	</g>
+</g>
+</svg>
