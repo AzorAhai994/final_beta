@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marinko Brdarević</title>
+    <link rel="shortcut icon" href="img/icon.ico" />
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/style-adsila.css" />
+    <link type="text/css" rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/tilt.css">
+    <link rel="stylesheet" href="css/tilteffect.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+
+
+
+</head>
+
+<body>
+    <!-- 0 PRELOADER -->
+    <div class="container">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <g>
+                <defs>
+                    <filter id="glow">
+                        <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+                        <femerge>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="SourceGraphic"></femergenode>
+                        </femerge>
+                    </filter>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(0, 195, 255);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(78, 0, 204);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <g>
+                    <path class="outer" style="fill-opacity: 0; stroke-width: 2; stroke: url(#grad1); filter: url(#glow);" d="M256.2,87.2l203.4,337.7H52.3L256.2,87.2">
+
+                    </path>
+                </g>
+                <g>
+                    <path class="inner" style="fill-opacity: 0; stroke-width: 2; stroke: url(#grad1); filter: url(#glow);" d="M256.2,183.6l116.1,192.8H139.8L256.2,183.6">
+                    </path>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <script>
+        var overlay = document.querySelector('.container');
+
+        window.addEventListener('load', function () {
+            overlay.style.display = 'none';
+        })
+    </script>
+    <!-- end of 0 PRELOADER -->
+
+    <!-- 0.5 NAVIGATION MENU -->
+    <header>
+        <div class="navbar-header">
+            <div class="toggle-button" id="toggle">
+                <div id="circle" class="krug"></div>
+                <span class="bar top"></span>
+                <span class="bar middle"></span>
+                <span class="bar bottom"></span>
+            </div>
+        </div>
+        <nav class="overlay" id="overlay">
+
+            <section class="content">
+                <nav class="menu menu--adsila">
+
+                    <a class="menu__item" href="#homepage">
+                        <span class="menu__item-name">HOME</span>
+
+                    </a>
+
+                    <a class="menu__item" href="#gallery">
+                        <span class="menu__item-name">PORTFOLIO</span>
+
+                    </a>
+
+                    <a class="menu__item" href="#about-me">
+                        <span class="menu__item-name">ABOUT ME</span>
+                    </a>
+
+                    <a class="menu__item" href="#contact">
+                        <span class="menu__item-name">CONTACT</span>
+
+                    </a>
+                </nav>
+            </section>
+        </nav>
+    </header>
+    <!-- end of 0.5 NAVIGATION MENU -->
+
+    <!-- 1 LANDING PAGE -->
+    <section>
+        <div class="page1 section" id="homepage" data-section-name="home">
+
+
+            <div class="hero">
+                <div class="hero__imgwrap">
+
+                    <img class="hero__img tilt-effect" data-tilt-options='{ "extraImgs" : 4, "opacity" : 0.5, "bgfixed" : false, "resetOnLeave" : false, "movement": { "perspective" : 600, "translateX" : -15, "translateY" : -15, "translateZ" : 20, "rotateX" : 15, "rotateY" : 15 } }'
+                        src="img/d3-2.svg" alt="Hero image" />
+                </div>
+                <div class="scroll-indicator">
+                    <p class="scroll">Scroll</p>
+                    <div class="arrow bounce animated infinite">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <!-- <i class="fas fa-chevron-down"></i> -->
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end of 1 LANDING PAGE -->
+
+    <!-- 2 PORTFOLIO -->
+    <section>
+        <div class="page2 section" id="gallery" data-section-name="portfolio">
+
+            <div id="filters" class="tooltip none fadeInLeft">
+                <div class="filter-bar-filters">
+                    <i class="fas fa-asterisk active" data-filter="*"></i>
+
+
+                    <i class="fas fa-camera" data-filter=".photos"></i>
+
+                    <i class="fas fa-palette" data-filter=".logos"></i>
+                    <i class="fas fa-tshirt" data-filter=".t-shirts"></i>
+                    <i class="fas fa-circle-notch" data-filter=".other"></i>
+                </div>
+
+            </div>
+
+            <div class="grid gallery">
+                <div class="grid-sizer">
+
+                </div>
+                <a href="img/l/img_01.jpg" data-lightbox="image" data-title="Tiny planet ver. 3 [🌍☀🏖🕶] ">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_01.jpg" title="Tiny planet ver. 3 [ 🌍☀🏖🕶 ]" alt="Tiny planet ver. 3">
+                    </div>
+                </a>
+
+                <a href="img/l/img_02.jpg" data-lightbox="image" data-title="#0x190 a/k/a get illuminated
+                a/k/a #400 [ 👁 x💡 ] 💥🎉 ">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_02.jpg" title="#0x190 a/k/a get illuminated
+                        a/k/a #400 [ 👁 x💡 ] 💥🎉 " alt="Eye">
+                    </div>
+                </a>
+
+                <a href="img/l/img_03.jpg" data-lightbox="image" data-title="Tiny planet 🌍 outtake №1">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_03.jpg" title="Tiny planet 🌍 outtake №1" alt="Tiny planet outtake #1">
+                    </div>
+                </a>
+                <a href="img/l/img_04.jpg" data-lightbox="image" data-title="Crazy NY selfie vol. IV [ light purification ritual 💡]">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_04.jpg" title="Crazy NY selfie vol. IV [ light purification ritual 💡]" alt="NY selfie">
+                    </div>
+                </a>
+                <a href="img/l/img_05.jpg" data-lightbox="image" data-title="Dog x balloon [version 2.06] 🐶 x🎈">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_05.jpg" title="Dog x balloon [version 2.06] 🐶 x🎈" alt="Dog x ballon">
+                    </div>
+                </a>
+                <a href="img/l/img_06.jpg" data-lightbox="image" data-title="Ušće Tower vol. I 🏢">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_06.jpg" title="Ušće Tower vol. I 🏢" alt="Ušće Tower">
+                    </div>
+                </a>
+                <a href="img/l/img_07.jpg" data-lightbox="image" data-title="Random stuff x snow x sunset x golden hour ❄">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_07.jpg" title="Random stuff x snow x sunset x golden hour ❄" alt="Snow x sunset">
+                    </div>
+                </a>
+                <a href="img/l/img_08.jpg" data-lightbox="image" data-title="Millennium Tower 🗼😄 1/4">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_08.jpg" title="Millennium Tower 🗼😄 1/4" alt="Millennium Tower">
+                    </div>
+                </a>
+                <a href="img/l/img_09.jpg" data-lightbox="image" data-title="Strike a pose 😄💖">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_09.jpg" title="Strike a pose 😄💖" alt="Strike a pose">
+                    </div>
+                </a>
+                <a href="img/l/img_10.jpg" data-lightbox="image" data-title="Laser experiment 🔦🔙">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_10.jpg" title="Laser experiment 🔦🔙" alt="Laser experiment">
+                    </div>
+                </a>
+                <a href="img/l/img_11.jpg" data-lightbox="image" data-title="Powerline x star trails">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_11.jpg" title="Powerline x star trails" alt="Powerline x star trails">
+                    </div>
+                </a>
+                <a href="img/l/img_12.jpg" data-lightbox="image" data-title="Blue 🌸">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_12.jpg" title="Blue 🌸" alt="Blue flower">
+                    </div>
+                </a>
+                <a href="img/l/img_13.jpg" data-lightbox="image" data-title="Sunflower core x bees 🐝🌻">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_13.jpg" title="Sunflower core x bees 🐝🌻" alt="Sunflower core x bees">
+                    </div>
+                </a>
+                <a href="img/l/img_14.jpg" data-lightbox="image" data-title="ヒナギク [ Bellis perennis ] 🌼🌸 II">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_14.jpg" title="ヒナギク [ Bellis perennis ] 🌼🌸 II" alt="ヒナギク [ Bellis perennis ]">
+                    </div>
+                </a>
+                <a href="img/l/img_15.jpg" data-lightbox="image" data-title="Tiny planet ver. 3.1 [🌍☀🏖🕶]">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_15.jpg" title="Tiny planet ver. 3.1 [🌍☀🏖🕶]" alt="Tiny planet ver. 3.1">
+                    </div>
+                </a>
+                <a href="img/l/img_16.jpg" data-lightbox="image" data-title="[🙆 x 🌊]">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_16.jpg" title="[🙆 x 🌊]" alt="[🙆 x 🌊]">
+                    </div>
+                </a>
+                <a href="img/l/img_17.jpg" data-lightbox="image" data-title="Iκαρος vol. II">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_17.jpg" title="Iκαρος vol. II" alt="Iκαρος vol. II">
+                    </div>
+                </a>
+                <a href="img/l/img_18.jpg" data-lightbox="image" data-title="Ada Bridge 🌁">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_18.jpg" title="Ada Bridge 🌁" alt="Ada Bridge">
+                    </div>
+                </a>
+                <a href="img/l/img_19.jpg" data-lightbox="image" data-title="Banner design">
+                    <div class="grid-item other" data-category="other">
+                        <img src="img/img_19.jpg" title="Banner design" alt="Banner design">
+                    </div>
+                </a>
+                <a href="img/l/img_20.jpg" data-lightbox="image" data-title="Bug x flower [🐜x🌸] ">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_20.jpg" title="Bug x flower [🐜x🌸] " alt="Bug x flower">
+                    </div>
+                </a>
+                <a href="img/l/img_21.jpg" data-lightbox="image" data-title="The MB logo x ink FJUŽN">
+                    <div class="grid-item logos other" data-category="logos other">
+                        <img src="img/img_21.jpg" title="The MB logo x ink FJUŽN" alt="The MB logo x ink FJUŽN">
+                    </div>
+                </a>
+                <a href="img/l/img_22.jpg" data-lightbox="image" data-title="2017 outtake #6 [ sunset x tree ] 🌄⬇ ">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_22.jpg" title="2017 outtake #6 [ sunset x tree ] 🌄⬇ " alt="2017 outtake #6 [ sunset x tree ]">
+                    </div>
+                </a>
+                <a href="img/l/img_23.jpg" data-lightbox="image" data-title="Bee x cherry blossoms [🐝x🌸] ">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_23.jpg" title="Bee x cherry blossoms [🐝x🌸] " alt="Bee x cherry blossoms">
+                    </div>
+                </a>
+                <a href="img/l/img_24.jpg" data-lightbox="image" data-title="Lightpainting experiment vol. II 💡😁">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_24.jpg" title="Lightpainting experiment vol. II 💡😁" alt="Lightpainting experiment vol. II">
+                    </div>
+                </a>
+                <a href="img/l/img_25.jpg" data-lightbox="image" data-title="Kalemegdan sunset vol. I 🌇">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_25.jpg" title="Kalemegdan sunset vol. I 🌇" alt="Kalemegdan sunset vol. I">
+                    </div>
+                </a>
+                <a href="img/l/img_26.jpg" data-lightbox="image" data-title="ANTI design">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_26.jpg" title="ANTI design" alt="ANTI design">
+                    </div>
+                </a>
+                <a href="img/l/img_27.jpg" data-lightbox="image" data-title="Starry night II 🌟✨🌉">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_27.jpg" title="Starry night II 🌟✨🌉" alt="Starry night II">
+                    </div>
+                </a>
+                <a href="img/l/img_28.jpg" data-lightbox="image" data-title="Fire 🔥💥">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_28.jpg" title="Fire 🔥💥" alt="Fire">
+                    </div>
+                </a>
+                <a href="img/l/img_29.jpg" data-lightbox="image" data-title="Star trails II 🌌">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_29.jpg" title="Star trails II 🌌" alt="Star trails II">
+                    </div>
+                </a>
+                <a href="img/l/img_30.jpg" data-lightbox="image" data-title="Inception poster ver. 1">
+                    <div class="grid-item other" data-category="other">
+                        <img src="img/img_30.jpg" title="Inception poster ver. 1" alt="Inception poster ver. 1">
+                    </div>
+                </a>
+                <a href="img/l/img_31.jpg" data-lightbox="image" data-title="Inception poster ver. 2">
+                    <div class="grid-item other" data-category="other">
+                        <img src="img/img_31.jpg" title="Inception poster ver. 2" alt="Inception poster ver. 2">
+                    </div>
+                </a>
+                <a href="img/l/img_32.jpg" data-lightbox="image" data-title="Ionnalee Gone art rasterization">
+                    <div class="grid-item other" data-category="other">
+                        <img src="img/img_32.jpg" title="Ionnalee Gone art rasterization" alt="Ionnalee Gone art rasterization">
+                    </div>
+                </a>
+                <a href="img/l/img_33.jpg" data-lightbox="image" data-title="Kupi mi kafu logo design ☕">
+                    <div class="grid-item logos" data-category="logos">
+                        <img src="img/img_33.jpg" title="Kupi mi kafu logo design ☕" alt="Kupi mi kafu logo design">
+                    </div>
+                </a>
+                <a href="img/l/img_34.jpg" data-lightbox="image" data-title="Kupi mi kafu logo mockup ☕">
+                    <div class="grid-item logos" data-category="logos">
+                        <img src="img/img_34.jpg" title="Kupi mi kafu logo mockup ☕" alt="Kupi mi kafu logo mockup">
+                    </div>
+                </a>
+                <a href="img/l/img_35.jpg" data-lightbox="image" data-title="NIKA Solutions logo design 🔺">
+                    <div class="grid-item logos" data-category="logos">
+                        <img src="img/img_35.jpg" title="NIKA Solutions logo design 🔺" alt="NIKA Solutions logo design">
+                    </div>
+                </a>
+                <a href="img/l/img_36.jpg" data-lightbox="image" data-title="ITA NY Card contest 🎄">
+                    <div class="grid-item other" data-category="other">
+                        <img src="img/img_36.jpg" title="ITA NY Card contest 🎄" alt="ITA NY Card contest">
+                    </div>
+                </a>
+                <a href="img/l/img_37.jpg" data-lightbox="image" data-title="Eiffel Tower card design 🗼">
+                    <div class="grid-item other" data-category="other">
+                        <img src="img/img_37.jpg" title="Eiffel Tower card design 🗼" alt="Eiffel Tower card design">
+                    </div>
+                </a>
+                <a href="img/l/img_38.jpg" data-lightbox="image" data-title="The Louvre card design">
+                    <div class="grid-item other" data-category="other">
+                        <img src="img/img_38.jpg" title="The Louvre card design" alt="The Louvre card design">
+                    </div>
+                </a>
+                <a href="img/l/img_39.jpg" data-lightbox="image" data-title="ARTPOP t-shirt design 👕">
+                    <div class="grid-item t-shirts" data-category="t-shirts">
+                        <img src="img/img_39.jpg" title="ARTPOP t-shirt design 👕" alt="ARTPOP t-shirt design">
+                    </div>
+                </a>
+                <a href="img/l/img_40.jpg" data-lightbox="image" data-title="Swine t-shirt design 👕">
+                    <div class="grid-item t-shirts" data-category="t-shirts">
+                        <img src="img/img_40.jpg" title="Swine t-shirt design 👕" alt="Swine t-shirt design">
+                    </div>
+                </a>
+                <a href="img/l/img_41.jpg" data-lightbox="image" data-title="DWUW t-shirt design 👕">
+                    <div class="grid-item t-shirts" data-category="t-shirts">
+                        <img src="img/img_41.jpg" title="DWUW t-shirt design 👕" alt="DWUW t-shirt design">
+                    </div>
+                </a>
+                <a href="img/l/img_42.jpg" data-lightbox="image" data-title="Judas t-shirt design 👕">
+                    <div class="grid-item t-shirts" data-category="t-shirts">
+                        <img src="img/img_42.jpg" title="Judas t-shirt design 👕" alt="Judas t-shirt design">
+                    </div>
+                </a>
+                <a href="img/l/img_43.jpg" data-lightbox="image" data-title="Scheiße t-shirt design 👕">
+                    <div class="grid-item t-shirts" data-category="t-shirts">
+                        <img src="img/img_43.jpg" title="Scheiße t-shirt design 👕" alt="Scheiße t-shirt design">
+                    </div>
+                </a>
+                <a href="img/l/img_44.jpg" data-lightbox="image" data-title="Business Card design 💇">
+                    <div class="grid-item logos other" data-category="logos other">
+                        <img src="img/img_44.jpg" title="Business Card design 💇" alt="Business Card design">
+                    </div>
+                </a>
+                <a href="img/l/img_45.jpg" data-lightbox="image" data-title="Star trails 🌌">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_45.jpg" title="Star trails 🌌" alt="Star trails">
+                    </div>
+                </a>
+                <a href="img/l/img_46.jpg" data-lightbox="image" data-title="Tiny planet 🌍 outtake №4">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_46.jpg" title="Tiny planet 🌍 outtake №4" alt="Tiny planet outtake №4">
+                    </div>
+                </a>
+                <a href="img/l/img_47.jpg" data-lightbox="image" data-title="Get illuminated 💡">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_47.jpg" title="Get illuminated 💡" alt="Get illuminated">
+                    </div>
+                </a>
+                <a href="img/l/img_48.jpg" data-lightbox="image" data-title="Belgrade waterfront 🌆">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_48.jpg" title="Belgrade waterfront 🌆" alt="Belgrade waterfront">
+                    </div>
+                </a>
+                <a href="img/l/img_49.png" data-lightbox="image" data-title="Zvučni Zid logo design 🔊">
+                    <div class="grid-item logos" data-category="logos">
+                        <img src="img/img_49.jpg" title="Zvučni Zid logo design 🔊" alt="Zvučni Zid logo design">
+                    </div>
+                </a>
+                <a href="img/l/img_50.jpg" data-lightbox="image" data-title="Zvučni Zid logo mockup 🔊">
+                    <div class="grid-item logos" data-category="logos">
+                        <img src="img/img_50.jpg" title="Zvučni Zid logo mockup 🔊" alt="Zvučni Zid logo mockup">
+                    </div>
+                </a>
+                <a href="img/l/img_51.jpg" data-lightbox="image" data-title="Prunus armeniaca 🌸">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_51.jpg" title="Prunus armeniaca 🌸" alt="Prunus armeniaca">
+                    </div>
+                </a>
+                <a href="img/l/img_52.jpg" data-lightbox="image" data-title="Tiny planet 🌍 outtake №2">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_52.jpg" title="Tiny planet 🌍 outtake №2" alt="Tiny planet outtake №2">
+                    </div>
+                </a>
+                <a href="img/l/img_53.jpg" data-lightbox="image" data-title="Tiny planet 🌨🌍">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_53.jpg" title="Tiny planet 🌨🌍" alt="Tiny planet">
+                    </div>
+                </a>
+                <a href="img/l/img_54.jpg" data-lightbox="image" data-title="Tiny planet 🌍 outtake № 3">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_54.jpg" title="Tiny planet 🌍 outtake № 3" alt="Tiny planet outtake № 3">
+                    </div>
+                </a>
+                <a href="img/l/img_55.jpg" data-lightbox="image" data-title="Algae sp. 10x40 🔬">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_55.jpg" title="Algae sp. 10x40 🔬" alt="Algae sp. 10x40">
+                    </div>
+                </a>
+                <a href="img/l/img_56.jpg" data-lightbox="image" data-title="Zinnia elegans 🌸">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_56.jpg" title="Zinnia elegans 🌸" alt="Zinnia elegans">
+                    </div>
+                </a>
+                <a href="img/l/img_57.jpg" data-lightbox="image" data-title="Autumn vibeZ 🍁🍂">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_57.jpg" title="Autumn vibeZ 🍁🍂" alt="Autumn vibeZ">
+                    </div>
+                </a>
+                <a href="img/l/img_58.jpg" data-lightbox="image" data-title="MagdalenQo 😹">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_58.jpg" title="MagdalenQo 😹" alt="MagdalenQo">
+                    </div>
+                </a>
+                <a href="img/l/img_59.jpg" data-lightbox="image" data-title="Eye of the tiger (almost) 🐱🐈">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_59.jpg" title="Eye of the tiger (almost) 🐱🐈" alt="Eye of the tiger (almost)">
+                    </div>
+                </a>
+                <a href="img/l/img_60.jpg" data-lightbox="image" data-title="'čela / Bee">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_60.jpg" title="'čela / Bee" alt="'čela / Bee">
+                    </div>
+                </a>
+                <a href="img/l/img_61.jpg" data-lightbox="image" data-title="Star trails 🌌">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_61.jpg" title="Star trails 🌌" alt="Star trails">
+                    </div>
+                </a>
+                <a href="img/l/img_62.jpg" data-lightbox="image" data-title="A tiny speck of dust, floating in space. [🌍x🌌]">
+                    <div class="grid-item photos" data-category="photos">
+                        <img src="img/img_62.jpg" title="A tiny speck of dust, floating in space. [🌍x🌌]" alt="A tiny speck of dust, floating in space.">
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- end of 2 PORTFOLIO -->
+
+
+    <!-- 3 ABOUT ME -->
+    <section>
+
+
+        <div id="about-me" class="page3 section" data-section-name="about--me">
+
+            <div class="contain">
+                <div class="cont">
+                    <a href="imgs/files/resume.pdf" id="work" class="parallaxTilt_hover fadeInLeft">
+                        <figure class="tilter_figure">
+                            <img class="tilter_image" src="img/img_2.jpg" alt="dive" />
+                            <div id="deco" class="tilter_deco">
+                                <img class="tilter_image" src="img/img_1.png" alt="dive" />
+                            </div>
+                            <figcaption class="tilter_caption">
+                                <h3 class="tilter_title">Marinko
+                                    <br>Brdarević</h3>
+                                <div id="txt" class="txt tilter_title">
+                                    <h2>
+                                        <span class="about">ABOUT</span>
+                                        <br>
+                                        <span class="me">ME</span>
+                                    </h2>
+                                </div>
+                                <p id="tag" class="tilter_tag">
+                                    <span>Web designer / developer</span>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+                <div class="contact">
+                    <a href="https://www.instagram.com/azor___ahai/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="​mailto:marinko.brdarevic@gmail.com?Subject=Contact" target="_blank">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="https://rs.linkedin.com/in/marinko-brdarevi%C4%87-108373131" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+    </section>
+    <!-- end of 3 ABOUT ME -->
+
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/tiltfx.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/switchstyler.js"></script>
+
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js">
+    </script>
+    <script src="js/packery-mode.pkgd.min.js"></script>
+    <script src="js/parallaxTilt.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+
+
+    <script>
+        var $grid = $('.grid').isotope({
+            sortBy: 'random',
+            itemSelector: '.grid-item',
+            layoutMode: 'packery',
+
+            packery: {
+                itemSelector: '.grid-item',
+                gutter: 0,
+                percentPosition: true,
+
+
+            }
+        });
+
+        $(window).on("load", (function () {
+            var $container = $('.grid');
+        }));
+
+        // layout Isotope after each image loads
+        $grid.imagesLoaded().progress(function () {
+            $grid.isotope('layout');
+        });
+
+
+        $('#filters i').click(function () {
+            var selector = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: selector
+            });
+            return false;
+        });
+    </script>
+    <script type="text/javascript">
+        (function () {
+
+            //	default opts:
+            //	parallaxMultiple: 0.1,
+            //	tiltMultiple: 0.05,
+            //      duration: 500,
+            //      easing:'easeOutExpo'
+
+            $('.tilter_image').parallaxTilt({
+                parallaxMultiple: 0.10,
+
+
+            });
+            $('.tilter_deco').parallaxTilt({
+                parallaxMultiple: .005
+            });
+            $('.tilter_caption').parallaxTilt({
+                parallaxMultiple: -(0.08)
+            });
+
+        })();
+    </script>
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $(function () {
+                $('#work').hover(function () {
+
+                    $('#tag').css('border-top', '4px solid #519700');
+                }, function () {
+                    // on mouseout, reset the background colour
+
+                    $('#tag').css('border-top', '4px solid #0058fb');
+                });
+            });
+        } else {
+            $(function () {
+                $('#work').hover(function () {
+                    $('#deco').css('opacity', '1');
+                    $('#tag').css('border-top', '4px solid #1dd100');
+                }, function () {
+                    // on mouseout, reset the background colour
+                    $('#deco').css('opacity', '0');
+                    $('#tag').css('border-top', '4px solid #0058fb');
+                });
+            });
+        }
+    </script>
+    <script>
+        $(function () {
+            $('#work').hover(function () {
+                $('#txt').css('opacity', '0');
+
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#txt').css('opacity', '1');
+
+            });
+        });
+    </script>
+
+    <script>
+        $('#filters').switchstyler({ //fixed object
+            on: '.page2', //target section
+            addClass: 'animated',
+            removeClass: 'none' //classes to remove
+        });
+    </script>
+    <script>
+        $('#circle').switchstyler({ //fixed object
+            on: '.page2', //target section
+            addClass: 'toggle-circle',
+            removeClass: '' //classes to remove
+        });
+    </script>
+
+    <script>
+        $('#work').switchstyler({ //fixed object
+            on: '.page3', //target section
+            addClass: 'animated',
+            removeClass: '' //classes to remove
+        });
+    </script>
+
+    <script src="js/mobile-chrome-vh-fix.js"></script>
+
+    <script>
+        var vhFix = new VHChromeFix([{
+                selector: '.page1',
+                vh: 100
+            },
+            {
+                //selector: '.page3',
+                vh: 100
+            },
+
+        ]);
+    </script>
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".section",
+                //standardScrollElements: ".page2",
+
+                //interstitialSection: ".grid--sect",
+                scrollSpeed: 650,
+                touchScroll: false,
+                setHeights: false,
+
+
+
+
+
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
